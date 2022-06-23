@@ -1,0 +1,11 @@
+[user]
+  name = shu.hui
+  email = shu.hui@rea-group.com
+[alias]
+  di = diff
+  ps = push
+  pl = pull
+  s = status
+  cm = commit -v
+[http]
+  sslVerify = false
