@@ -16,7 +16,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/go/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
 # Antigen and plugins
@@ -33,7 +33,4 @@ antigen apply
 
 eval "$(fasd --init auto)"
 
-# Change default input
-# export GTK_IM_MODULE=fcitx
-# export QT_IM_MODULE=fcitx 
-# export XMODIFIERS=@im=fcitx
+export OKTA_USERNAME=shu.hui

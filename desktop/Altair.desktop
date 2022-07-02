@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Altair
+Comment=A light, Electron-based wrapper around GraphiQL.
+Exec="/opt/Altair/altair_4.5.0_x86_64_linux.AppImage" %f
+Terminal=false
+Type=Application
+Icon=appimagekit-graphiql-app
+Categories=Development;
