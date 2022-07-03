@@ -23,7 +23,7 @@
 
 
 ## Gnome
-
+- https://www.youtube.com/watch?v=lXIb-1_H-mA
 
 ## Chinese Input
 - `sudo apt install fcitx`
@@ -40,3 +40,7 @@
   - https://github.com/nvm-sh/nvm
 - AWS
   - https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+
+## Terminal
+- https://sw.kovidgoyal.net/kitty/
