@@ -48,3 +48,6 @@
 
 ## Terminal
 - https://sw.kovidgoyal.net/kitty/
+
+## Neovim
+- `sudo apt-get install neovim`
