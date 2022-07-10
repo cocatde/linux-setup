@@ -1,4 +1,4 @@
-require 'nvim-tree'.setup {
+require "nvim-tree".setup {
     diagnostics = {
         enable = true,
     },
@@ -6,7 +6,7 @@ require 'nvim-tree'.setup {
         ignore = false,
     },
     renderer = {
-        highlight_opened_files = '2',
+        highlight_opened_files = "2",
         indent_markers = {
             enable = true
         },
@@ -16,4 +16,4 @@ require 'nvim-tree'.setup {
 
 vim.cmd [[highlight NvimTreeIndentMarker guifg=#30323E]]
 
-vim.api.nvim_set_keymap('n', '<leader>n', ':NvimTreeFindFileToggle<CR>', { silent = true, noremap = true })
+vim.api.nvim_set_keymap("n", "<leader>n", ":NvimTreeFindFileToggle<CR>", { silent = true, noremap = true })
