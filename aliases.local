@@ -1,3 +1,4 @@
 # Unix
 alias dcc="docker compose"
 alias vim="nvim"
+alias bat="batcat"

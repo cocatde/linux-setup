@@ -51,3 +51,4 @@
 
 ## Neovim
 - `sudo apt-get install neovim`
+- Plugin manager: https://github.com/wbthomason/packer.nvim
