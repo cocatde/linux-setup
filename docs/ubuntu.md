@@ -52,3 +52,6 @@
 ## Neovim
 - `sudo apt-get install neovim`
 - Plugin manager: https://github.com/wbthomason/packer.nvim
+- Dependencies:
+  - https://github.com/BurntSushi/ripgrep
+  - https://github.com/sharkdp/fd
