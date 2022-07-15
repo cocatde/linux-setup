@@ -24,6 +24,5 @@ hard_create_symbol_link ./tmux.conf ~/.tmux.conf
 hard_create_symbol_link ./gitconfig ~/.gitconfig
 hard_create_symbol_link ./gitconfig.local ~/.gitconfig.local
 hard_create_symbol_link ./gitmessage ~/.gitmessage
-hard_create_symbol_link ./kitty/dracula.conf ~/.config/kitty/dracula.conf
-hard_create_symbol_link ./kitty/kitty.conf ~/.config/kitty/kitty.conf
+hard_create_symbol_link ./kitty ~/.config/kitty
 hard_create_symbol_link ./neovim ~/.config/nvim

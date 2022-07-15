@@ -51,12 +51,18 @@ return packer.startup(function(use)
   }
 
   use {
-    "dracula/vim",
-    as = "dracula",
+    "ellisonleao/gruvbox.nvim",
     config = function()
-      require("user.plugins.dracula")
+      require("user.plugins.gruvbox")
     end
   }
+ -- use {
+ --   "dracula/vim",
+ --   as = "dracula",
+ --   config = function()
+ --     require("user.plugins.dracula")
+ --   end
+ --  }
 
   -- Dependencies https://github.com/BurntSushi/ripgrep https://github.com/sharkdp/fd
   use {
