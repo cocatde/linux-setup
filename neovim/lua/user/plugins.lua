@@ -39,9 +39,9 @@ packer.init {
 }
 
 return packer.startup(function(use)
-  use { "wbthomason/packer.nvim" }
+  use "wbthomason/packer.nvim"
 
-  use { "christoomey/vim-tmux-navigator" }
+  use "christoomey/vim-tmux-navigator"
   use {
     "kyazdani42/nvim-tree.lua",
     requires = "kyazdani42/nvim-web-devicons",
@@ -56,13 +56,13 @@ return packer.startup(function(use)
       require("user.plugins.gruvbox")
     end
   }
- -- use {
- --   "dracula/vim",
- --   as = "dracula",
- --   config = function()
- --     require("user.plugins.dracula")
- --   end
- --  }
+  -- use {
+  --   "dracula/vim",
+  --   as = "dracula",
+  --   config = function()
+  --     require("user.plugins.dracula")
+  --   end
+  --  }
 
   -- Dependencies https://github.com/BurntSushi/ripgrep https://github.com/sharkdp/fd
   use {
@@ -76,6 +76,18 @@ return packer.startup(function(use)
       require("user.plugins.telescope")
     end
   }
+
+  -- cmp plugins
+  use "hrsh7th/nvim-cmp" -- The completion plugin
+  use "hrsh7th/cmp-buffer" -- buffer completions
+  use "hrsh7th/cmp-path" -- path completions
+  use "hrsh7th/cmp-cmdline" -- cmdline completions
+
+  -- snippets
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "saadparwaiz1/cmp_luasnip" -- snippet completions
+  use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
