@@ -1,5 +1,8 @@
 # Shu's setup script and dotfiles
 
+![](./Screenshot.png)
+
+
 ## Requirements
 - zsh ohmyzsh tmux fasd antigen kitty
 
