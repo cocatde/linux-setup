@@ -23,6 +23,9 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 
+-- Disable key binding for command history "q:"
+-- vim.api.nvim_del_keymap("n", "q:")
+vim.cmd("nnoremap q: <nop>")
 -- Insert
 
 
