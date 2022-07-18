@@ -5,12 +5,13 @@
 - https://support.zoom.us/hc/en-us/articles/204206269-Installing-or-updating-Zoom-on-Linux
 - https://learning.postman.com/docs/getting-started/installation-and-updates/#installing-postman-on-linux
 
-## ZSH
+## ZSH & TMUX
 - `sudo apt install git curl zsh tmux fasd`
 - Set zsh as your login shell: `chsh -s $(which zsh)`
 - https://github.com/ohmyzsh/ohmyzsh
 - https://github.com/zsh-users/antigen
 - Clone TPM `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+- Nerd fonts: `https://github.com/ryanoasis/nerd-fonts`
 - Install powerline font
   - `git clone https://github.com/powerline/fonts.git`
   - `cd fonts`
