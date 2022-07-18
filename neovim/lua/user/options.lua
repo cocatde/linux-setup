@@ -1,6 +1,6 @@
 local set = vim.opt
 
-set.spell = false
+set.spell = true
 set.title = true
 set.expandtab = true
 set.smarttab = true
