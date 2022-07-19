@@ -25,4 +25,4 @@ hard_create_symbol_link ./gitconfig ~/.gitconfig
 hard_create_symbol_link ./gitconfig.local ~/.gitconfig.local
 hard_create_symbol_link ./gitmessage ~/.gitmessage
 hard_create_symbol_link ./kitty ~/.config/kitty
-hard_create_symbol_link ./neovim ~/.config/nvim
+hard_create_symbol_link ./nvim ~/.config/nvim
