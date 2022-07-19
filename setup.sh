@@ -7,12 +7,12 @@ cd $(dirname $0)
 hard_create_symbol_link() {
   _source_path=$(realpath $1)
   _target_path=$2
-  
-  echo "--- Create symbol links ${_source_path} => ${_target_path}"
 
-  if test -f "$_target_path"; then
-    rm $_target_path
+  if [ -f "$_target_path" ] || [ -d "$_target_path" ]; then
+    echo "--- Found existing configuration at the target path, removing it => ${_target_path}"
+    rm -rf $_target_path
   fi
+  echo "--- Create symbol links ${_source_path} => ${_target_path}"
   ln -sf ${_source_path} ${_target_path}
 }
 
