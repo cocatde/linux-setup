@@ -105,7 +105,14 @@ return packer.startup(function(use)
       require("user.plugins.autopairs")
     end
   }
-
+  -- Easily comment stuff
+  use {
+    "numToStr/Comment.nvim",
+    config = function()
+      require("user.plugins.comment")
+    end
+  }
+  use "JoosepAlviste/nvim-ts-context-commentstring"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
