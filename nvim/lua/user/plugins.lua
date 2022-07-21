@@ -1,3 +1,4 @@
+-- https://github.com/rockerBOO/awesome-neovim
 local fn = vim.fn
 
 -- Automatically install packer
