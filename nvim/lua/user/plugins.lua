@@ -57,13 +57,6 @@ return packer.startup(function(use)
       require("user.plugins.gruvbox")
     end
   }
-  -- use {
-  --   "dracula/vim",
-  --   as = "dracula",
-  --   config = function()
-  --     require("user.plugins.dracula")
-  --   end
-  --  }
 
   -- Dependencies https://github.com/BurntSushi/ripgrep https://github.com/sharkdp/fd
   use {
@@ -102,6 +95,14 @@ return packer.startup(function(use)
     run = ":TSUpdate",
     config = function()
       require("user.plugins.treesitter")
+    end
+  }
+
+  -- Autopairs, integrates with both cmp and treesitter
+  use {
+    "windwp/nvim-autopairs",
+    config = function()
+      require("user.plugins.autopairs")
     end
   }
 
