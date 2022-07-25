@@ -1,8 +1,15 @@
 local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
-local actions = require "telescope.actions"
+local status_ok, telescope = pcall(require, "telescope")
+if not status_ok then
+  return
+end
+local action_status_ok, actions = pcall(require, "telescope.actions")
+if not action_status_ok then
+  return
+end
 
-require('telescope').setup{
+telescope.setup{
   defaults = {
     -- Default key mapping: https://github.com/nvim-telescope/telescope.nvim#default-mappings
     mappings = {
