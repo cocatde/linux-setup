@@ -1,33 +1,39 @@
-local set = vim.opt
+local options = {
+  mouse = "a",
+  spell = true,
+  title = true,
+  expandtab = true,
+  smarttab = true,
+  shiftwidth = 2,
+  tabstop = 2,
+  hlsearch = true,
+  incsearch = true,
+  smartcase = true,
+  wildmode = "longest:full,full",
+  splitbelow = true,
+  splitright = true,
+  wrap = false,
+  fileencoding = "utf-8",
+  termguicolors = true,
+  relativenumber = true,
+  nu = true,
+  cursorline = true,
+  ignorecase = true,
+  hidden = true,
+  swapfile = false,
+  backup = false,
+  undodir = os.getenv("HOME") .. "/.vim/undodir",
+  undofile = true,
+  scrolloff = 8,
+  sidescrolloff = 8,
+  signcolumn = "yes",
+  textwidth = 120,
+  colorcolumn = "+1",
+  clipboard = "unnamedplus" -- Use Linux system clipboard,
+}
 
-set.spell = true
-set.title = true
-set.expandtab = true
-set.smarttab = true
-set.shiftwidth = 2
-set.tabstop = 2
-set.hlsearch = true
-set.incsearch = true
-set.smartcase = true
-set.wildmode = "longest:full,full"
-set.splitbelow = true
-set.splitright = true
-set.wrap = false
-set.scrolloff = 5
-set.fileencoding = "utf-8"
-set.termguicolors = true
-set.relativenumber = true
-set.nu = true
-set.cursorline = true
-set.ignorecase = true
-set.hidden = true
-set.swapfile = false
-set.backup = false
-set.undodir = os.getenv("HOME") .. "/.vim/undodir"
-set.undofile = true
-set.scrolloff = 8
-set.sidescrolloff = 8
-set.signcolumn = "yes"
-set.textwidth = 120
-set.colorcolumn = "+1"
-set.clipboard = "unnamedplus" -- Use Linux system clipboard
+vim.opt.shortmess:append "c"
+
+for k, v in pairs(options) do
+  vim.opt[k] = v
+end

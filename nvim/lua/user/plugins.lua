@@ -121,6 +121,17 @@ return packer.startup(function(use)
       require("user.plugins.gitsigns")
     end
   }
+
+  -- Bufferline
+  use {
+    "akinsho/bufferline.nvim",
+    requires = {
+      { "moll/vim-bbye" },
+    },
+    config = function()
+      require("user.plugins.bufferline")
+    end
+  }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
