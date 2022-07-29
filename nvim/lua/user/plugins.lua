@@ -24,7 +24,7 @@ vim.cmd [[
   augroup end
 ]]
 
--- Use a protected call so we don't error out on first use
+-- Use a protected call so we don"t error out on first use
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
   return
@@ -134,6 +134,18 @@ return packer.startup(function(use)
     },
     config = function()
       require("user.plugins.bufferline")
+    end
+  }
+
+  -- Greeter Screen
+  use {
+    "goolord/alpha-nvim",
+    requires = {
+      { "kyazdani42/nvim-web-devicons" },
+      { "antoinemadec/FixCursorHold.nvim" },
+    },
+    config = function()
+      require("user.plugins.alpha")
     end
   }
   -- Automatically set up your configuration after cloning packer.nvim
