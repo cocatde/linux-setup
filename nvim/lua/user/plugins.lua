@@ -70,6 +70,12 @@ return packer.startup(function(use)
       require("user.plugins.telescope")
     end
   }
+  use {
+    "ahmedkhalf/project.nvim",
+    config = function ()
+      require("user.plugins.project")
+    end
+  }
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
