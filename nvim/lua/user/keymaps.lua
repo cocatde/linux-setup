@@ -46,7 +46,7 @@ keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
-keymap("n", "<leader>f", ":Format <CR>", opts)
+-- keymap("n", "<leader>f", ":Format <CR>", opts)
 
 -- Remove trailing spaces
 vim.cmd [[ command! RemoveTs execute '%s/\s\+$//e' ]]

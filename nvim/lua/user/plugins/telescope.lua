@@ -25,6 +25,7 @@ telescope.setup{
   extensions = { }
 }
 
-keymap("n", "<leader>p", [[<cmd>Telescope find_files hidden=true<CR>]], opts)
+keymap("n", "<leader>f", [[<cmd>Telescope find_files hidden=true<CR>]], opts)
 keymap("n", "<leader>r", [[<cmd>Telescope live_grep<CR>]], opts)
+keymap("n", "<leader>p", [[<cmd>Telescope projects<CR>]], opts)
 keymap("n", "<leader>b", [[<cmd>lua require("telescope.builtin").buffers()<CR>]], opts)
