@@ -6,7 +6,7 @@ metals_config.settings = {
   excludedPackages = { "akka.actor.typed.javadsl", "com.github.swagger.akka.javadsl" },
 }
 
-local capabilities = require("user.lsp.handlers").capabilities
+local capabilities = vim.lsp.protocol.make_client_capabilities()
 metals_config.capabilities = require("cmp_nvim_lsp").update_capabilities(capabilities)
 -- Autocmd that will actually be in charging of starting the whole thing
 local nvim_metals_group = vim.api.nvim_create_augroup("nvim-metals", { clear = true })
