@@ -33,6 +33,7 @@ local options = {
 }
 
 vim.opt.shortmess:append "c"
+vim.opt_global.shortmess:remove("F")
 
 for k, v in pairs(options) do
   vim.opt[k] = v

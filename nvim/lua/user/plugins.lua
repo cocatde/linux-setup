@@ -95,7 +95,15 @@ return packer.startup(function(use)
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig",
-    "jose-elias-alvarez/null-ls.nvim" -- for formatters and linters
+    "jose-elias-alvarez/null-ls.nvim", -- for formatters and linters
+  }
+
+  -- Scala metals
+  use {
+    "scalameta/nvim-metals",
+    config = function ()
+      require("user.plugins.metals")
+    end
   }
 
   -- TreeSitter
