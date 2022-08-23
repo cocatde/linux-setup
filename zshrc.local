@@ -34,3 +34,4 @@ antigen apply
 eval "$(fasd --init auto)"
 
 export OKTA_USERNAME=shu.hui
+export REA_AS_MFA_METHOD=OKTA_PUSH
