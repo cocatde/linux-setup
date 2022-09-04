@@ -1,5 +1,5 @@
 local options = {
-  mouse = "a",
+  mouse = "",
   spell = true,
   title = true,
   expandtab = true,
