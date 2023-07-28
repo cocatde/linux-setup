@@ -26,3 +26,5 @@
   path = ~/.gitconfig.local
 [diff]
   colorMoved = zebra
+[safe]
+	directory = /docs
