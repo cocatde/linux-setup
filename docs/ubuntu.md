@@ -34,14 +34,18 @@
 - https://www.youtube.com/watch?v=lXIb-1_H-mA
 
 ## Chinese Input
-- `sudo apt install fcitx`
-- `sudo cp /usr/share/applications/fcitx.desktop /etc/xdg/autostar`
-- `sudo rm /etc/profile.d/pop-im-ibus.sh`
-- `sudo dpkg -i sogoupinyin.....`
+```bash
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS="@im=fcitx"
+/etc/environment
+```
+- https://shurufa.sogou.com/linux/guide
 
 ## Dev
+
 - Java
-  - `sudo apt install openjdk-8-jdk`
+  - `curl -s "https://get.sdkman.io" | bash`
 - Scala
   - https://www.scala-sbt.org/1.x/docs/Installing-sbt-on-Linux.html
 - Node
@@ -54,6 +58,7 @@
 - https://sw.kovidgoyal.net/kitty/
 
 ## Neovim
+- `sudo add-apt-repository ppa:neovim-ppa/unstable`
 - `sudo apt-get install neovim`
 - Plugin manager: https://github.com/wbthomason/packer.nvim
 - Dependencies:
