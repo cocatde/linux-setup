@@ -12,6 +12,9 @@
 - https://github.com/zsh-users/antigen
 - Clone TPM `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - Nerd fonts: `https://github.com/ryanoasis/nerd-fonts`
+  - Download a Nerd Font
+  - Unzip and copy to ~/.fonts
+  - Run the command fc-cache -fv to manually rebuild the font cache
 - Install powerline font
   - `git clone https://github.com/powerline/fonts.git`
   - `cd fonts`
