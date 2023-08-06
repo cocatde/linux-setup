@@ -31,7 +31,7 @@
 
 
 ## Gnome
-- https://www.youtube.com/watch?v=lXIb-1_H-mA
+- [theme](./gnome-theme.md)
 
 ## Chinese Input
 ```bash
