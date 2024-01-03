@@ -11,7 +11,7 @@ nvim_tree.setup {
     ignore = false,
   },
   renderer = {
-    highlight_opened_files = "2",
+    highlight_opened_files = "name",
     indent_markers = {
       enable = true
     },
